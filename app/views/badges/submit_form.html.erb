@@ -1,0 +1,27 @@
+<div>
+  <form action="/success">
+    <h1> Submit Badge </h1>
+    <br/>
+    <br/>
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" placeholder="date">
+    <br/>
+    <br/>
+    <label for="recname">Recipient Name</label>
+    <input type="text" id="recname" name="name" placeholder="Your name..">
+    <br/>
+    <br/>
+    <label for="baduuid">Badge UUID</label>
+    <input type="text" id="baduuid" name="uuid" placeholder="Badge UUID..">
+    <br/>
+    <br/>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<br/>
+<br/>
+<div>
+  <% flash.each do |key, value| %>
+    <div style="color: red" class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+</div>

@@ -1,0 +1,2 @@
+class ChainpointError < StandardError
+end
